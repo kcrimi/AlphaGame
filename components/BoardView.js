@@ -76,9 +76,9 @@ class BoardView extends Component {
 
 	clickTile(id) {
 		var tilt = this.state.tilt[id];
-		tilt.setValue(1);
+		tilt.setValue(0);
 		Animated.timing(tilt, {
-			toValue: 0,
+			toValue: 1,
 			duration: 250,
 			easing: Easing.quad
 		}).start();
